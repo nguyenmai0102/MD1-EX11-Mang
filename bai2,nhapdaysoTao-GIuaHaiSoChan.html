@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+document.write('bai 2')
+let dayso =prompt('nhap day so ')
+console.log(dayso.toString())
+let newDaySo= [ dayso[0]]
+for (let i = 1; i <dayso.length ; i++) {
+
+ if (dayso[i-1]%2===0 && dayso[i]%2===0){
+newDaySo.push("-" , dayso[i])
+}else{
+newDaySo.push(dayso[i])
+}
+}
+console.log('new log', newDaySo.join("") );
+document.write('new log', newDaySo.join("") )
+</script>
+</body>
+</html>

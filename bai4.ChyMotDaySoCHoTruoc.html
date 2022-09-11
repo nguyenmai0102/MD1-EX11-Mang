@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body onload="luna()" style="text-align: center">
+
+<h2>"Mặt trăng biến hình"</h2>
+<form>
+    <label>
+        <textarea cols="30" rows="5" id="thoNgoc"></textarea>
+    </label>
+</form>
+
+
+
+<script>
+
+    let array=[];
+    let moon="Sức Mạnh Mặt Trăng, Makeup!"
+    array= moon.split(' ');
+    let str = "";
+    array[1] = 'S';
+    array[2] = 'ứ';
+    array[3] = 'c';
+    array[4] = ' ';
+    array[5] = 'M';
+    array[6] = 'ạ';
+    array[7] = 'n';
+    array[8] = 'h';
+    array[9] = ' ';
+    array[10] = 'M';
+    array[11] = 'ặ';
+    array[12] = 'T';
+    array[13] = ' ';
+    array[14] = 'T';
+    array[15] = 'r';
+    array[16] = 'ă';
+    array[17] = 'n';
+    array[18] = 'g';
+    array[19] = ' ';
+    array[20] = 'M';
+    array[21] = 'a';
+    array[22] = 'K';
+    array[23] = 'e';
+    array[24] = 'u';
+    array[25] = 'p';
+    array[26] = '!';
+    function luna(){
+        let text = document.getElementById("thoNgoc").value;
+        for (let i = 1; i < text.length; i++) {
+            str= str + array[i];
+            if (i==26){
+                str="";
+            }
+        }
+        document.getElementById("thoNgoc").value = str;
+        str=" ";
+        setTimeout(luna,1)
+    }
+
+
+
+</script>
+</body>
+</html>
